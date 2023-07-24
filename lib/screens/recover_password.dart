@@ -44,6 +44,7 @@ class RecoverPassword extends StatelessWidget {
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 24),
               child: const TextField(
+                key: Key('recoverPasswordInput'),
                 textAlignVertical: TextAlignVertical.center,
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.only(bottom: 5),

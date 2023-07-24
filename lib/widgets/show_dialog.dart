@@ -9,6 +9,7 @@ showCustomDialog(BuildContext context, String title, String text) {
       content: Text(text),
       actions: <Widget>[
         TextButton(
+          key: const Key('closeDialogBtn'),
           child: const Text('Fechar'),
           onPressed: () {
             Get.back();

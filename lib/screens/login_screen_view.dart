@@ -22,9 +22,9 @@ class LoginScreen extends StatelessWidget {
             const Tittle(),
             LoginForm(),
             Container(
-              key: const Key('terms'),
               margin: const EdgeInsets.only(top: 130),
               child: TextButton(
+                key: const Key('terms'),
                 onPressed: () => {
                   Get.toNamed('/TermsOfService'),
                 },

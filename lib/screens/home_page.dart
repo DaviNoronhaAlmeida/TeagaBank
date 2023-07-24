@@ -41,6 +41,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             TextButton(
+              key: const Key('logout'),
               onPressed: () {
                 Get.toNamed('/');
               },

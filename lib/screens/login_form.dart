@@ -23,6 +23,7 @@ class LoginForm extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.only(left: 58),
                   child: TextButton(
+                    key: const Key('cpfBtn'),
                     onPressed: () => {_.change("CPF")},
                     child: const Text(
                       'Pessoa Física',
@@ -38,6 +39,7 @@ class LoginForm extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.only(left: 34),
                   child: TextButton(
+                    key: const Key('cnpjBtn'),
                     onPressed: () => {_.change("CNPJ")},
                     child: const Text(
                       'Pessoa Jurídica',
@@ -74,6 +76,7 @@ class LoginForm extends StatelessWidget {
               height: 39,
               child: TextField(
                 controller: inputController,
+                key: const Key('cpfInput'),
                 textAlignVertical: TextAlignVertical.center,
                 keyboardType:
                     const TextInputType.numberWithOptions(decimal: true),
@@ -119,6 +122,8 @@ class LoginForm extends StatelessWidget {
               height: 39,
               child: TextField(
                 controller: passwdController,
+                key: const Key('passwordInput'),
+                obscureText: true,
                 textAlignVertical: TextAlignVertical.center,
                 decoration: const InputDecoration(
                   contentPadding: EdgeInsets.all(0),
@@ -157,6 +162,7 @@ class LoginForm extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 15),
               child: TextButton(
+                key: const Key('forgetPasswordBtn'),
                 onPressed: () => {
                   Get.toNamed('/RecoverPassword'),
                 },
@@ -176,6 +182,7 @@ class LoginForm extends StatelessWidget {
               width: 195,
               height: 39,
               child: TextButton(
+                key: const Key('loginBtn'),
                 style: TextButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 24, 206, 197),
                   shadowColor: Colors.black,
@@ -211,6 +218,7 @@ class LoginForm extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 32),
               child: TextButton(
+                key: const Key('registerBtn'),
                 onPressed: () => {
                   if (_.type == "CPF")
                     {

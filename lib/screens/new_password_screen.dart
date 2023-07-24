@@ -58,6 +58,7 @@ class NewPasswordScreen extends StatelessWidget {
                 return Container(
                   margin: const EdgeInsets.symmetric(horizontal: 24),
                   child: TextField(
+                    key: const Key('newPasswordInput'),
                     controller: _passwdController,
                     textAlignVertical: TextAlignVertical.bottom,
                     decoration: InputDecoration(

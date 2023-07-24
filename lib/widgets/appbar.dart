@@ -14,6 +14,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
       leading: InkWell(
+        key: const Key('arrowBtn'),
         onTap: () => Get.back(),
         child: const Icon(
           Icons.arrow_back_ios_new,

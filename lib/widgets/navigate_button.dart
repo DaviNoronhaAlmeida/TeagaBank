@@ -17,6 +17,7 @@ class NavigateButton extends StatelessWidget {
       width: 195,
       height: 39,
       child: TextButton(
+        key: const Key('nextBtn'),
         style: TextButton.styleFrom(
           backgroundColor: const Color.fromRGBO(15, 6, 120, 1),
           shadowColor: const Color.fromRGBO(0, 0, 0, 0.25),
